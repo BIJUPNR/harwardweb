@@ -24,12 +24,33 @@
             width:500px;
             height:5px;
         }
+
+        .tdata{
+            margin:5px;
+            padding:5px;            
+        }
+
+        .btn{
+            position:absolute;
+            margin:20px; 
+            left:35%;
+        }
     </style>
 </head>
 <body>
     <div class="topcorner">
-        <a href="image.html">Image Search</a>    
-        <a href="advanced.html">Advanced Search</a>    
+        <table>
+            <tbody>
+                <tr>
+                    <td class="tdata">
+                        <a href="image.html">Image Search</a>    
+                    </td>
+                    <td>
+                        <a href="advanced.html">Advanced Search</a>   
+                    </td>
+                </tr>
+            </tbody>
+        </table>         
     </div>
     <div class="center">
         <form action="https://www.google.com/search">
@@ -37,7 +58,7 @@
                 <input type="text" name="q" class="rounded">
             </div>
             <div>
-                <input type="submit" value="Google Search">
+                <input type="submit" value="Google Search" class="btn">
             </div>
         </form>
     </div>        
